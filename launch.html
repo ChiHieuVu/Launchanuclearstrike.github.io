@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Launch
+</title>
+<style>
+body {
+  background-color: #002b6c;
+}
+textarea {
+  width: 314px;
+  height: 40px;
+  padding: 7px 20px;
+  box-sizing: border-box;
+  border: 2px solid white;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 16px;
+  resize: none;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+
+</style>
+<script>
+   
+   var counter = 0;
+      function incrementCounter() {
+      counter++;
+      if (counter % 1 == 0) {
+        document.getElementById("image").src = "button2.svg";
+      } else {
+        document.getElementById("image").src = "button1.svg";
+      }
+    }
+</script>
+</head>
+<body>
+
+<form>
+  <textarea>Destination:</textarea>
+
+</form>
+
+<img id="image" src="button1.svg" onclick="incrementCounter()" width="360" height="360">
+<img src="emblemrel.svg" alt="Italian Trulli">
+<center>
+<h4 style="color:White;font-family:Verdana">Long live the People's Republic Of Nakrashev!</h4>
+<h5 style="color:White;font-family:Verdana">Click the button to launch</h5>
+
+</body>
+</html>
